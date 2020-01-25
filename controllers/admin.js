@@ -9,7 +9,7 @@ exports.getAdminPassword = (req, res, next) => {
 exports.postAdminPassword = (req, res, next) => {
   enteredPassword = String(req.body.password);
 
-  if (enteredPassword === "Darby1") {
+  if (enteredPassword === "NOT REAL PASSWORD") { //password redacted for github.
     res.render('add-company', {
       pageTitle: 'Add Company',
       path: 'add-company',

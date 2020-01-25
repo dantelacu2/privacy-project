@@ -30,7 +30,7 @@ app.use((req, res, next) => {
 
 mongoose
     .connect(
-      'mongodb+srv://dantelacu:emxtL1nxStNIv7x8@cluster0-6qufv.mongodb.net/test?authSource=admin&retryWrites=true&w=majority',
+      // redacted bc of credentials.
       {
         useUnifiedTopology: true
       }
