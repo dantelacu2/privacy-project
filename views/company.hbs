@@ -1,0 +1,54 @@
+
+{{!-- <header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+            <h1>{{ searchQuery }}</h1>
+                <br>
+            <h3>{{ info }}</h3>
+        </div>
+    </div>
+</header> --}}
+
+<header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+        <div class="col-md-4 mb-3 mb-md-0">
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+                <div class="card-body text-center">
+                    <h3 class="text-uppercase m-0">{{ searchQuery }}</h3>
+                    <br>
+                    {{!-- <h6 class="m-0 make-circle">{{ info }}</h6> --}}
+                    <div class="make-circle">{{info}}</div>
+                    {{!-- <div class="small text-black-50 m-0">Privacy Policy Analysis</div> --}}
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="about" class="projects-section bg-light">
+    <div class="container">
+        <!-- Featured Project Row -->
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+            {{!-- <div class="col-xl-8 col-lg-7">
+                <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="">
+            </div> --}}
+            <div class="col-xl-11 col-lg-11">
+                <div class="featured-text text-center text-lg-left">
+                    <h4>What does this number mean?</h4>
+                    <p class="text-black-50 mb-0">This page takes the privacy policy of a particular
+                        company, stored in a MongoDB collection, and uses the AFINN word list and 
+                        ranks each significant word on a scale of -5 to 5. -5 being a very negative word
+                        vs 5 being a very positive word. As a result, it negatively scores phrases like
+                        'we sell your data' however it positively scores phrases like we value your privacy. 
+                        The composite value of all of these words is then divided by the tokens (words that 
+                        were scored) and gives us this comparative score. This way we can compare companies
+                        and see how "benevolent" their privacy policies are.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
